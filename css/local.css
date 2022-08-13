@@ -1,0 +1,709 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+main {
+  min-height: 50em;
+  background: var(--background);
+}
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+  #hero {
+    font-size: inherit;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    position: relative;
+  }
+
+  #hero::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 11em;
+    width: 6em;
+    background-image: url("/images/hero-sun.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 1em;
+    right: 0;
+  }
+
+  #hero .hero-content {
+    width: 96%;
+    max-width: 57.2em;
+    margin: auto;
+  }
+
+  #hero .hero-content {
+    padding: 0;
+  }
+
+  #hero .heroText {
+    width: 100%;
+    max-width: 37em;
+  }
+
+  #hero h1 {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 1.35em;
+    margin-bottom: 0.5em;
+  }
+
+  #hero h1 span:first-child {
+    color: var(--primary);
+  }
+
+  #hero h1 span:last-child {
+    position: relative;
+  }
+
+  #hero h1 span:last-child::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 0.2em;
+    width: 0.2em;
+    background: var(--secondary);
+    bottom: 0.15em;
+    right: -0.2em;
+    border-radius: 50%;
+  }
+
+  #hero p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 1.75em;
+    color: var(--text);
+  }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+
+  #hero h1 {
+    font-size: 4em
+  }
+
+  #hero p {
+    font-size: 1.75em;
+  }
+
+  #hero::after {
+    height: 17em;
+    width: 10em;
+    top: 3em;
+  }
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #hero {
+    padding-top: 15em;
+    padding-bottom: 5em;
+  }
+
+  #hero::after {
+    top: 13em;
+  }
+
+  #hero p {
+    font-size: 1.5em;
+  }
+
+}
+
+@media only screen and (min-width: 74em) {
+
+  #hero::after {
+    height: 22em;
+    width: 13em;
+  }
+
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 81em) {
+
+  #hero .heroText {
+    max-width: 44em;
+  }
+
+}
+
+/*-- -------------------------- -->
+<---        What We DOUX        -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #what-we-doux {
+    position: relative;
+    z-index: 1;
+  }
+
+  #what-we-doux .doux-list::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 11.875em;
+    height: 2em;
+    background: url("/images/doux-dot-rows.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0em;
+    bottom: -1em;
+  }
+
+  #what-we-doux .doux-header {
+    text-align: center;
+  }
+
+  #what-we-doux h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #what-we-doux .doux-header h2 span {
+    background-image: url("/images/doux-underline-accent.svg");
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #what-we-doux h3 {
+    margin-bottom: 0.25em;
+  }
+
+  #what-we-doux p {
+    font-style: italic;
+  }
+
+  #what-we-doux .doux-list {
+    background: linear-gradient(#eef1f3, #d9e2ffe2), url("/images/consultant.png");
+    background-position: center;
+    position: relative;
+    padding: 3em 0;
+    max-width: 35em;
+    margin: auto;
+  }
+
+  #what-we-doux div ul {
+    list-style-type: none;
+    margin: 0 1em;
+    padding: 1em;
+    max-width: 22em;
+  }
+
+  #what-we-doux div ul li {
+    position: relative;
+    padding-left: 4em;
+    padding-bottom: 1.5em;
+  }
+
+  #what-we-doux div ul li:first-child::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3em;
+    height: 3.1em;
+    background-image: url("/images/analyze.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+
+  #what-we-doux div ul li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3em;
+    height: 3.1em;
+    background-image: url("/images/roadmap.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+
+  #what-we-doux div ul li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3em;
+    height: 3.1em;
+    background-image: url("/images/accessibility.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+
+  #what-we-doux div ul li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3em;
+    height: 3.1em;
+    background-image: url("/images/prototyping.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+
+  #what-we-doux div ul li:last-child::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 3em;
+    height: 3.1em;
+    background-image: url("/images/teaching.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+
+}
+
+@media only screen and (min-width: 26.25em) {
+  #what-we-doux .doux-list::before {
+    width: 17.875em;
+    height: 3em;
+    right: -2em;
+    bottom: -4.5em;
+  }
+
+  #what-we-doux div ul {
+    background: var(--background);
+  }
+
+  #what-we-doux .doux-list {
+    background: none;
+  }
+
+  #what-we-doux .doux-list::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    background: url("/images/consultant.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: -3em;
+    z-index: -1;
+  }
+
+  #what-we-doux div ul {
+    padding: 1em 2em;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+
+  #what-we-doux .doux-list {
+    max-width: 51em;
+  }
+
+  #what-we-doux div ul {
+    max-width: 27em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  #what-we-doux h2 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #what-we-doux h3 {
+    font-size: 1.5em;
+  }
+
+  #what-we-doux p {
+
+    font-size: 1.25em;
+  }
+
+}
+
+
+/*-- -------------------------- -->
+<---     Pay Less, Worry Less   -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+  #pay-less {
+    background: linear-gradient(var(--background), #b6d0e280);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  #pay-less::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 7em;
+    width: 3.5em;
+    background-image: url("/images/pay-less-sun.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: -2.5em;
+    left: 0;
+  }
+
+  #pay-less h2 {
+    font-size: 2.5em;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+  }
+
+  #pay-less p:first-of-type {
+    font-size: 1.25em;
+    max-width: 35em;
+    margin: auto;
+    padding: 0 1em;
+    padding: 3em 0.5em;
+  }
+
+  #pay-less p:last-of-type {
+    letter-spacing: -1px;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+
+  #pay-less .button-white {
+    font-weight: 500;
+    margin: auto;
+    padding: 1em;
+    width: 10em;
+  }
+
+}
+
+@media only screen and (min-width: 26.25em) {
+
+  #pay-less::after {
+    height: 10em;
+    width: 5.5em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  #pay-less {
+    padding-top: 10em;
+  }
+
+  #pay-less div {
+    padding-bottom: 2em;
+  }
+
+  #pay-less::after {
+    height: 15em;
+    width: 8.5em;
+    bottom: -5em;
+  }
+
+  #pay-less h2 {
+    font-size: 3.5em;
+  }
+
+  #pay-less p:first-of-type {
+    max-width: 45em;
+  }
+
+  #pay-less p:last-of-type {
+    margin-bottom: 0.75em;
+  }
+
+}
+
+
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+  #pricing h2 {
+    font-size: 2.5em;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  #pricing .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+
+    background: #f5f5f5;
+    padding: 2.5em 1em;
+    max-width: 30em;
+    margin: auto;
+  }
+
+  #pricing .card {
+    background: #fff;
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  #pricing .card>div:first-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    height: 12.5em;
+  }
+
+  #pricing .card>div:first-of-type>div {
+    text-align: center;
+  }
+
+  #pricing .card-border {
+    position: relative;
+    padding-top: 2.25em;
+    margin-bottom: 2em;
+  }
+
+  #pricing .card-border::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 90%;
+    background-image: url("/images/card-divider.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 5%;
+  }
+
+  #pricing .card h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+    max-width: 26.25em;
+  }
+
+  #pricing .card:first-of-type h3 {
+    background: rgba(129, 174, 208, 0.2);
+  }
+
+  #pricing .card:nth-of-type(2) h3 {
+    background: rgba(129, 174, 208, 0.4);
+  }
+
+  #pricing .card:last-of-type h3 {
+    background: rgba(129, 174, 208, 0.8);
+  }
+
+  #pricing h4 {
+    font-family: "Montserrat";
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #pricing div ul {
+    list-style-image: url("/images/checkmark.svg");
+    margin-right: 1em;
+  }
+
+  #pricing div ul li {
+    padding-left: 0.75em;
+    padding-bottom: 0.5em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  #pricing h2 {
+    font-size: 3.5em;
+  }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+  #pricing .card-group {
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    max-width: 75em;
+  }
+
+  #pricing .card {
+    max-width: 30em;
+    margin: 0 0.5em;
+  }
+
+  #pricing h4 {
+    font-size: 1.75em;
+  }
+
+}
+
+/*-- -------------------------- -->
+<---            FAQs            -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+  #faqs {
+    position: relative;
+    max-width: 50em;
+    margin: auto;
+  }
+
+  #faqs::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 190px;
+    height: 32px;
+    background: url("/images/doux-dot-rows.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+
+  #faqs h2 {
+    font-size: 2.5em;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  #faqs .faq-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    max-width: 48em;
+    margin: auto;
+  }
+
+  #faqs .faq-list>div {
+    width: 100%;
+    background-color: white;
+    padding: 1em 2em 1em 1em;
+    margin: 0.5em 1em;
+  }
+
+  #faqs summary {
+    list-style: none;
+  }
+
+  #faqs summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    cursor: pointer;
+  }
+
+  #faqs summary p {
+    font-weight: 600;
+    font-size: 1.15em;
+  }
+
+  #faqs details>p {
+    padding: 1em 0.5em;
+  }
+
+  #faqs details[open] summary img {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(180deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+  }
+
+  #faqs details summary img {
+    transition: all .5s ease-in-out;
+  }
+
+}
+
+@media only screen and (min-width: 36em) {
+
+  #faqs::after {
+    width: 17.875em;
+    height: 3em;
+    top: 2em;
+    right: -2em;
+  }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+  #faqs::after {
+    width: 360px;
+    height: 64px;
+  }
+
+  #faqs h2 {
+    font-size: 3.5em;
+  }
+
+}
