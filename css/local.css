@@ -543,6 +543,11 @@ main {
     margin-bottom: 0.5em;
   }
 
+  #pricing .card div:last-child p {
+    font-weight: 600;
+    margin: 0 1em;
+  }
+
   #pricing div ul {
     list-style-image: url("/images/checkmark.svg");
     margin-right: 1em;
