@@ -739,7 +739,7 @@
 
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 599px) {
 
   .side-nav ul li {
     margin-bottom: 2em;
@@ -751,7 +751,7 @@
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
 
   .side-nav ul li {
     margin-bottom: 3em;
