@@ -29,6 +29,15 @@
   src: local('Fira Sans Condensed'), url('/fonts/FiraSansCondensed-SemiBold.ttf') format('truetype');
 }
 
+/* Fira Sans Condensed - Light Italic */
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Condensed'), url('/fonts/FiraSansCondensed-LightItalic.ttf') format('truetype');
+}
+
 /* Fira Sans Condensed - Italic */
 @font-face {
   font-family: 'Fira Sans Condensed';

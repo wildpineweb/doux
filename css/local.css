@@ -593,6 +593,88 @@ main {
 }
 
 /*-- -------------------------- -->
+<---            Blog            -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+
+  #blog {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #blog h2 {
+    font-size: 2.5em;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  #blog>div {
+    background: white;
+    padding: 2.5em 1em;
+    max-width: 30em;
+    margin: auto;
+  }
+
+  #blog>div a {
+    text-decoration: none;
+  }
+
+  #blog h3 {
+    font-size: 1.75em;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  #blog h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #blog .blog-post {
+    max-width: 18.75em;
+    margin: auto;
+    padding: 2em;
+    border-radius: 5px;
+    background: rgba(129, 174, 208, 0.2);
+  }
+
+  #blog .blog-post img {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  #blog h2 {
+    font-size: 3.5em;
+  }
+
+  #blog h3 {
+    font-size: 2em;
+  }
+
+  #blog>div {
+    max-width: 45em;
+  }
+
+  #blog h4 {
+    font-size: 1.75em;
+  }
+
+  #blog .blog-post {
+    max-width: 30em;
+    margin: auto;
+    padding: 2em;
+    border-radius: 5px;
+    background: rgba(129, 174, 208, 0.2);
+  }
+
+}
+
+/*-- -------------------------- -->
 <---            FAQs            -->
 <--- -------------------------- -*/
 /* Mobile */
@@ -696,6 +778,14 @@ main {
     height: 3em;
     top: 2em;
     right: -2em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  #faqs h2 {
+    font-size: 3.5em;
   }
 
 }
